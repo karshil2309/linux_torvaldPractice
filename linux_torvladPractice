@@ -1,0 +1,24 @@
+echo "Enter the prime number"
+read n
+
+for((i=1;i<=n;i++));
+do
+	if [ $n mod $i == 0 ]
+	then
+	{
+		count++
+	}
+
+done
+
+if [ count == 2 ]
+then
+{
+echo "$n is a prime number"
+}
+else
+{
+echo "$n is not a  prime number"
+}
+fi
+fi
